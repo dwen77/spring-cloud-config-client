@@ -1,0 +1,15 @@
+management:
+  endpoint:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: env
+spring:
+  cloud:
+    bus:
+      env:
+        enabled: true
+      refresh:
+        enabled: true
