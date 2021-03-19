@@ -1,9 +1,9 @@
 spring:
   cloud:
     config:
-      name: config-client-development, config-client-production
       uri: http://localhost:8888
   profiles:
     active: development
+    include: blacklist
   application:
     name: config-client
